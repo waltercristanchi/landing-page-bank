@@ -1,0 +1,91 @@
+@import "./header.scss";
+@import "./menu.scss";
+
+@import "./main.scss";
+@import "./why.scss";
+@import "./latest-articles.scss";
+@import "./footer.scss";
+
+:root{
+  
+--darkBlue: hsl(233, 26%, 24%);
+--limeGreen: hsl(136, 65%, 51%);
+--brightCyan: hsl(192, 70%, 51%);
+--grayBlue: hsl(233, 8%, 62%);
+--gray: hsl(220, 16%, 96%);
+--lightGray: hsl(0, 0%, 98%);
+--white: hsl(0, 0%, 100%);
+--wrapperPadding: 1.5em;
+font-size: 16px;
+}
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  color: var(--grayBlue);
+  margin: 0;
+}
+
+.wrapper{
+  padding: 0 var(--wrapperPadding);
+}
+@mixin title {
+  font-size: 2.2em;
+  color: var(--darkBlue);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: .6em;
+} title{
+ 
+}
+.title{
+  &-h1{
+ @include title;
+  }
+  &-h2{
+    @include title;
+    font-size: 1.5em;
+
+  }
+  &-h3{
+    @include title;
+    font-size: 1.1em;
+
+  }
+}
+.text{
+  line-height: 1.7;
+  justify-self: left;
+  font-size: .9em;
+}
+.button{
+  border: none;
+  padding: .7em 2em;
+  font-size: 1em;
+  background-image:linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%) ;
+  border-radius: 1.5em;
+  color: var(--white);
+}
+@mixin icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: inline-flex;
+}
+.icon {
+  &__facebook {
+    @include icon;
+    background-image: url('../images/icon-facebook.svg');
+  }
+  &__twitter {
+    @include icon;
+    background-image: url('../images/icon-twitter.svg');
+  }
+  &__youtube {
+    @include icon;
+    background-image: url('../images/icon-youtube.svg');
+  }
+  &__instagram {
+    @include icon;
+    background-image: url('../images/icon-instagram.svg');
+  }
+}

@@ -1,0 +1,30 @@
+.latest-articles{
+  padding: 5em 0;
+  background: var(--lightGray);
+  .title-h1{
+    text-align: center;
+  }
+ 
+  &-item{
+    background: var(--white);
+    border-radius: .5em;
+    overflow: hidden;
+      img{
+        width: 100%;
+      object-fit: cover;
+      
+      }
+      &-content{
+        padding:0 1.8em;
+      }
+      small{
+        color: var(--grayBlue);
+        margin-bottom: 1em;
+        display: block;
+      }
+  }
+  &-grid{
+    display: grid;
+    grid-row-gap: 2em;
+  }
+}

@@ -1,0 +1,14 @@
+.main{
+  text-align: center;
+  padding-bottom: 4em;
+  .text{
+    margin-bottom: 2.5em;
+  }
+  &-image{
+    border: 1px solid red;
+    margin:0 calc(-1*var(--wrapperPadding));
+    height: 300px;
+    background: url('../images/image-mockups.png') center bottom no-repeat, url('../images/bg-intro-mobile.svg') center no-repeat;
+    background-size: 327px, cover;
+  }
+}

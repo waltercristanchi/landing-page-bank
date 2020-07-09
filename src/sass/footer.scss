@@ -1,0 +1,33 @@
+.footer{
+  background: var(--darkBlue);
+  color: var(white);
+  padding: 2em 0;
+  text-align: center;
+  svg {
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+  }
+  &__navigation {
+    display: grid;
+    text-align: center;
+
+  }
+  a {
+    color: var(--gray);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;;
+  }
+  &__first{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  &__socialmedia {
+display: flex;
+justify-content: center;
+margin-top: 0;
+  }
+
+}

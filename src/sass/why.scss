@@ -1,0 +1,15 @@
+.why{
+  background: var(--gray);
+  text-align: center;
+  padding-top: 3em;
+   
+  &-item{
+    border: 1px solid yellow;
+    .text{
+      margin-bottom: 2em;
+    }
+    img {
+      margin-bottom: 1em;
+    }
+}
+}
