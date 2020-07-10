@@ -1,4 +1,5 @@
 .footer{
+  border: 1px solid yellow;
   background: var(--darkBlue);
   color: var(white);
   padding: 2em 0;
@@ -28,6 +29,29 @@
 display: flex;
 justify-content: center;
 margin-top: 0;
+  }
+  @media screen and( min-width: 768px) {
+    &__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      button{
+        height: 50px;
+        width: 200px;
+      }
+    }
+    &__first{
+      display: block;
+    }
+    &__socialmedia{
+      justify-content: left;
+    }
+    svg {
+      margin: 1em 0;
+    }
+    &__navigation{
+      grid-template-columns: 1fr 1fr;
+    }
+
   }
 
 }

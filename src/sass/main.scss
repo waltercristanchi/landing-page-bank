@@ -19,24 +19,21 @@
   &__content{
     text-align: left;
     display: grid;
-    align-items: center;
-    grid-template-areas: "description image";
+        grid-template-areas: "description image";
     grid-template-columns: 480px 1fr;
     min-height: 480px;
   }
  &__description{
-   border: 1px solid red;
  }
   &-image {
     position: absolute;
-    background: url('../images/image-mockups.png') bottom  no-repeat;
+    background: url('../images/image-mockups.png')bottom right 20px no-repeat;
     background-size: contain;
     grid-area: image;
     min-height: inherit;
-    width: 480px;
-    height: 768px;
-    right: 180px;
-    
+    width: 750px;
+    height: 650px;
+    right: 100px;    
 
   }
 }
