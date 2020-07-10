@@ -5,10 +5,41 @@
     margin-bottom: 2.5em;
   }
   &-image{
-    border: 1px solid red;
     margin:0 calc(-1*var(--wrapperPadding));
     height: 300px;
     background: url('../images/image-mockups.png') center bottom no-repeat, url('../images/bg-intro-mobile.svg') center no-repeat;
     background-size: 327px, cover;
   }
+
+
+
+@media screen and (min-width: 768px) {
+  background: url('../images/bg-intro-desktop.svg') right -600px top -320px no-repeat;
+  background-size: cover;
+  &__content{
+    text-align: left;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "description image";
+    grid-template-columns: 480px 1fr;
+    min-height: 480px;
+  }
+ &__description{
+   border: 1px solid red;
+ }
+  &-image {
+    position: absolute;
+    background: url('../images/image-mockups.png') bottom  no-repeat;
+    background-size: contain;
+    grid-area: image;
+    min-height: inherit;
+    width: 480px;
+    height: 768px;
+    right: 180px;
+    
+
+  }
+}
+
+ 
 }

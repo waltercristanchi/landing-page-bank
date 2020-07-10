@@ -27,6 +27,8 @@ body{
 
 .wrapper{
   padding: 0 var(--wrapperPadding);
+  max-width: 1280px;
+  margin: auto;
 }
 @mixin title {
   font-size: 2.2em;
@@ -34,9 +36,7 @@ body{
   font-weight: 400;
   margin: 0;
   margin-bottom: .6em;
-} title{
- 
-}
+} 
 .title{
   &-h1{
  @include title;
