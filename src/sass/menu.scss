@@ -7,6 +7,13 @@
   display: none;
   list-style: none;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    display: block;
+    li {
+      display: inline;
+    }
+  }
+
   a{
     text-decoration: none;
     color: var(--grayBlue);
